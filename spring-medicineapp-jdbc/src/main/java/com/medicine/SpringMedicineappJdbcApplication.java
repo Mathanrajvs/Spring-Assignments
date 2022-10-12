@@ -36,10 +36,10 @@ public class SpringMedicineappJdbcApplication implements CommandLineRunner {
 	Medicine medicine;
 	@Override
 	public void run(String... args) throws Exception {
-		
+		Scanner sc=new Scanner(System.in);
 			System.out.println("Add Medicine....");
-			String name = "Makinan";
-			int id = 147;
+			String name = sc.next();
+			int id = sc.nextInt();
 			int category = 2;
 			String special = Category.values()[category - 1].type;
 			String brand = "MNK company";
@@ -53,7 +53,7 @@ public class SpringMedicineappJdbcApplication implements CommandLineRunner {
 			medicine.setCategory(special);
 			medicineService.addMedicine(medicine);	
 			
-			
+			sc.close();
 			System.out.println("Update...");
 			medicineService.updateMedicine(101, 100);
 			
