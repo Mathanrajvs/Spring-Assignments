@@ -39,7 +39,7 @@ public class SpringMedicineappJdbcApplication implements CommandLineRunner {
 		
 			System.out.println("Add Medicine....");
 			String name = "Makinan";
-			int id = 147;
+			int id = 145;
 			int category = 2;
 			String special = Category.values()[category - 1].type;
 			String brand = "MNK company";
