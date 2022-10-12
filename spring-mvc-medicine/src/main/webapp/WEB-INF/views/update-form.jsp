@@ -32,8 +32,8 @@
 			</tr>
 			<tr>
 				<th><label>Medicine Availability:</label></th>
-				<td><select name="available">
-				<option  value="${medicine.availability}" readonly/>
+				<td>
+				<input type="radio"  name="availability" value="${medicine.availability}" readonly/>
 				</select>
 				</td>
 				

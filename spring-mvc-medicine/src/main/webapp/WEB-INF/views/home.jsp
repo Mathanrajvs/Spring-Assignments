@@ -15,14 +15,14 @@ ${medicines}
 <hr>
 <form action="search-medicine-for-diseases">
 <select name="choice">
-<option value="covid">Covid Essentials</option>
-<option value="skin-care">Skin Care</option>
-<option value="ayurvedic-care">Ayurvedic Care</option>
-<option value="diabetic-care">Diabetic Care</option>
-<option value="pain-relief">Pain Reief</option>
-<option value="cold-and-cough">Cold and Cough</option>
-<option value="cancer">Cancer</option>
-<option value="food-poisioning">Food Poisioning</option>
+<option value="Covid Essentials">Covid Essentials</option>
+<option value="Skin Care">Skin Care</option>
+<option value="Ayurvedic Care">Ayurvedic Care</option>
+<option value="Diabetic Care">Diabetic Care</option>
+<option value="Pain Reief">Pain Reief</option>
+<option value="Cold and Cough">Cold and Cough</option>
+<option value="Cancer">Cancer</option>
+<option value="Food Poisoning">Food Poisioning</option>
 </select>
 <input type="submit" value="Search Medicine">
 </form>
