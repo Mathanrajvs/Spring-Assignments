@@ -38,7 +38,7 @@ public class SpringMedicineappJdbcApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Scanner sc=new Scanner(System.in);
 			System.out.println("Add Medicine....");
-			String name = sc.next();
+			String name = "Gel";
 			int id = sc.nextInt();
 			int category = 2;
 			String special = Category.values()[category - 1].type;
