@@ -1,5 +1,8 @@
 package com.medicineapp;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -23,8 +26,14 @@ public class SpringDatajpaMedicineappApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("Add Medicine....");
-		Medicine addMedicine=new Medicine("Rolax",221,"Food Poisoning","SKS company",200,true);
-		medicineService.addMedicine(addMedicine);
+		List<Medicine> medicines=Arrays.asList(
+				new Medicine("Rolax",221,"Food Poisoning","SKS company",200,true),
+				new Medicine("Rola",201,"Skin Care","KLS company",2000,true),
+				new Medicine("lotax",101,"Food Poisoning","MKL company",300,true),
+				new Medicine("Montek",103,"Cancer","KLA company",100,true)
+				);
+		for(Medicine medicine:medicines)
+		medicineService.addMedicine(medicine);
 		System.out.println("Update Medicine....");
 		Medicine updateMedicine=new Medicine("roval",221,"covid","SKS company",500,true);
 		medicineService.addMedicine(updateMedicine);
@@ -32,7 +41,7 @@ public class SpringDatajpaMedicineappApplication implements CommandLineRunner {
 		Medicine medicineId=medicineService.getById(221);
 		System.out.println(medicineId);
 		System.out.println("Delete Medicine.....");
-		medicineService.deleteMedicine(32);
+		medicineService.deleteMedicine(103);
 		
 		
 		System.out.println("Medicine Name Containing....");
