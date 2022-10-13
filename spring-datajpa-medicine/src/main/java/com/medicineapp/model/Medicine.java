@@ -1,4 +1,4 @@
-package com.medicine.model;
+package com.medicineapp.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

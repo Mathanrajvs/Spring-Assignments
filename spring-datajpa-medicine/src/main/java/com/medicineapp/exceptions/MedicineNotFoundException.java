@@ -1,18 +1,18 @@
-package com.medicine.exceptions;
+package com.medicineapp.exceptions;
 
-public class SqlNotFoundException extends RuntimeException {
+public class MedicineNotFoundException extends RuntimeException {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public SqlNotFoundException() {
+	public MedicineNotFoundException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public SqlNotFoundException(String message) {
+	public MedicineNotFoundException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}

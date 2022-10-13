@@ -1,10 +1,10 @@
-package com.medicine.service;
+package com.medicineapp.service;
 
 import java.util.List;
 
-import com.medicine.exceptions.IdNotFoundException;
-import com.medicine.exceptions.MedicineNotFoundException;
-import com.medicine.model.Medicine;
+import com.medicineapp.exceptions.IdNotFoundException;
+import com.medicineapp.exceptions.MedicineNotFoundException;
+import com.medicineapp.model.Medicine;
 /**
  * Perform Operations between DAO layer and Main layer
  *

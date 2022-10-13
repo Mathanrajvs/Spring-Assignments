@@ -1,4 +1,4 @@
-package com.medicine.exceptions;
+package com.medicineapp.exceptions;
 
 public class IdNotFoundException extends RuntimeException {
 

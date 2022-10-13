@@ -1,14 +1,14 @@
-package com.medicine.service;
+package com.medicineapp.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.medicine.exceptions.IdNotFoundException;
-import com.medicine.exceptions.MedicineNotFoundException;
-import com.medicine.model.Medicine;
-import com.medicine.repository.IMedicineRepository;
+import com.medicineapp.exceptions.IdNotFoundException;
+import com.medicineapp.exceptions.MedicineNotFoundException;
+import com.medicineapp.model.Medicine;
+import com.medicineapp.repository.IMedicineRepository;
 /**
  *Perform operations in Service layer
  * @implSpec IMedicineService the interface
@@ -77,7 +77,7 @@ public class MedicineServiceImpl implements IMedicineService {
 	 */
 	@Override
 	public List<Medicine> getByNameContaining(String name) throws MedicineNotFoundException {
-		List<Medicine> medicines=medicineDao.findByMedicineName(name);
+		List<Medicine> medicines=medicineDao.findByMedicineNameStartingWith(name);
 		
 		if(medicines.isEmpty()) {
 			throw new MedicineNotFoundException("MEDICINE IS NOT FOUND");
